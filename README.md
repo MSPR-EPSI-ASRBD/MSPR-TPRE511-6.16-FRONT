@@ -1,10 +1,10 @@
-# NFL IT - Seahawks Monitoring Solution
+# Seahawks Monitoring Solution
 
-Bienvenue dans le projet de solution de monitoring des infrastructures informatiques pour le football américain, développé par NFL IT.
+Bienvenue dans le projet de solution de monitoring des infrastructures informatiques.
 
 ## Description
 
-Ce projet vise à créer une solution complète de monitoring pour superviser et maintenir à distance les infrastructures informatiques liées au football américain. La solution se compose de deux composants principaux : le Seahawks Harvester (Client) et le Seahawks Nester (Serveur).
+Ce projet vise à créer une solution complète de monitoring pour superviser et maintenir à distance les infrastructures informatiques. La solution se compose de deux composants principaux : le Seahawks Harvester (Client) et le Seahawks Nester (Serveur).
 
 ### Seahawks Harvester (Client)
 
