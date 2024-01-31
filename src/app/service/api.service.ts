@@ -79,6 +79,8 @@ export class ApiService {
   verif_ip(info:any){
     return this._http.post(`${this.apiUrl}/verif_ip`,info,{reportProgress:true,observe:'events'})
   }
-
+  verif_token(token:string):Observable<any>{
+    return this._http.get(`${this.apiUrl}/verif_token/${token}`)
+  }
 
 }
