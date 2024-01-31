@@ -1,0 +1,58 @@
+<div class="contenant">
+  <div id="wrapper">
+      <app-sidebar></app-sidebar>
+      <div id="content-wrapper" class="d-flex flex-column">
+          <div id="content">
+
+              <app-navbar></app-navbar>
+
+              <div id="container-fluid">
+                 <div class="container">
+                  <div style="text-align: center;color: rgb(66, 66, 228);"><strong><h2>Liste des Logs</h2> </strong></div>
+                  <div class="row" style="width: 70%; margin: 0 auto;" >
+
+                   
+                    <!-- Pending Requests Card Example -->
+
+                </div>
+                  <div class="shadow p-3 mb-5 bg-white rounded">
+                      <div class="form">
+
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>PID</th>
+                              <th>Proccessus</th>
+                              <th>Temps </th>
+                              <th>Message</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let item of dataSource | paginate: { itemsPerPage: itemsPerPage, currentPage: p }; let i = index">
+                              <td>{{item.pid}} </td>
+                              <td>{{item.process}} </td>
+                              <td>{{item.timestamp}} </td>
+                              <td>{{item.message}} </td>
+                              <!-- <td><button class="form-control btn btn-primary" (click)="consulter(item._id)">Consulter</button></td> -->
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="pagination">
+                          <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+
+                 </div>
+
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+<app-footer></app-footer>
